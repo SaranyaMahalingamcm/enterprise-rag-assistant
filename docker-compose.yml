@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    image: enterprise-rag-assistant:local
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example   # replace with your own .env for hosted providers
+    environment:
+      RAG_LOG_LEVEL: INFO
+    restart: unless-stopped

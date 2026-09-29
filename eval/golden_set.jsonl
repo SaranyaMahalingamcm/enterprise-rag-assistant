@@ -1,0 +1,20 @@
+{"id": "q01", "question": "How often should the LC-500 focus lens be cleaned?", "expected_doc_ids": ["lc500-manual", "sop-006-pm-schedule"], "answerable": true}
+{"id": "q02", "question": "What does robot alarm R17 mean?", "expected_doc_ids": ["alarm-reference"], "answerable": true}
+{"id": "q03", "question": "What does alarm E220 mean on the CM-220?", "expected_doc_ids": ["cm220-maintenance", "alarm-reference"], "answerable": true}
+{"id": "q04", "question": "What is the acceptable backlash on the CNC mill axes?", "expected_doc_ids": ["cm220-maintenance"], "answerable": true}
+{"id": "q05", "question": "What coolant mixture goes into the CH-40 chiller reservoir?", "expected_doc_ids": ["ch40-manual"], "answerable": true}
+{"id": "q06", "question": "Who is allowed to remove a lockout lock?", "expected_doc_ids": ["sop-001-loto"], "answerable": true}
+{"id": "q07", "question": "How do I perform a rate-of-rise test on the vacuum chamber?", "expected_doc_ids": ["ts-003-vacuum-leaks"], "answerable": true}
+{"id": "q08", "question": "What base pressure must the VC-90 reach before coating?", "expected_doc_ids": ["vc90-manual"], "answerable": true}
+{"id": "q09", "question": "Can I jumper the door switch during mirror alignment?", "expected_doc_ids": ["bulletin-2026-03"], "answerable": true}
+{"id": "q10", "question": "What is the TCP error tolerance for robot arm calibration?", "expected_doc_ids": ["sop-014-robot-calibration"], "answerable": true}
+{"id": "q12", "question": "What is the target response time for a Tier 2 service request?", "expected_doc_ids": ["spares-escalation"], "answerable": true}
+{"id": "q13", "question": "What action does safety bulletin 2026-03 require for the door interlock bracket?", "expected_doc_ids": ["bulletin-2026-03"], "answerable": true}
+{"id": "q15", "question": "What must be reviewed during a maintenance shift handover?", "expected_doc_ids": ["sop-020-handover"], "answerable": true}
+{"id": "q16", "question": "What is the part number for the VC-90 lid O-ring?", "expected_doc_ids": ["spares-escalation", "vc90-manual"], "answerable": true}
+{"id": "q17", "question": "How do I align the laser mirrors with a target card?", "expected_doc_ids": ["sop-014-robot-calibration", "lc500-manual"], "answerable": true}
+{"id": "q18", "question": "What should I do if a spill of IPA is larger than 500 ml?", "expected_doc_ids": ["sop-009-chemicals"], "answerable": true, "filters": {"doc_type": "sop"}}
+{"id": "q19", "question": "What was the company's quarterly revenue last year?", "expected_doc_ids": [], "answerable": false}
+{"id": "q20", "question": "Can you recommend a good recipe for sourdough bread?", "expected_doc_ids": [], "answerable": false}
+{"id": "q21", "question": "What is the maximum payload of the RA-6 robot?", "expected_doc_ids": [], "answerable": false, "note": "near-domain: RA-6 is documented, payload is not"}
+{"id": "q22", "question": "What is the warranty period for the LC-500?", "expected_doc_ids": [], "answerable": false, "note": "near-domain: warranty is mentioned, period is not"}

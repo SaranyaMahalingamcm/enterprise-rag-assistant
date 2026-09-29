@@ -1,0 +1,644 @@
+{
+  "summary": {
+    "questions": 20,
+    "answerable": 16,
+    "unanswerable": 4,
+    "hit@1": 0.8125,
+    "hit@3": 0.9375,
+    "hit@5": 1.0,
+    "mrr": 0.890625,
+    "citation_precision": 0.7708333333333334,
+    "citation_hit_rate": 0.9375,
+    "groundedness": 1.0,
+    "answer_rate": 1.0,
+    "refusal_accuracy_unanswerable": 0.75,
+    "queries_with_injection_filtered": 2,
+    "latency_p50_ms": 9.276485999976103,
+    "latency_p95_ms": 13.540410499996373
+  },
+  "ablation": {
+    "bm25": {
+      "hit@1": 0.875,
+      "mrr": 0.921875
+    },
+    "dense": {
+      "hit@1": 0.75,
+      "mrr": 0.85625
+    },
+    "hybrid": {
+      "hit@1": 0.8125,
+      "mrr": 0.890625
+    }
+  },
+  "config": {
+    "version": "0.1.0",
+    "embedding_provider": "local-hashing-tfidf",
+    "llm_provider": "extractive",
+    "documents": 14,
+    "chunks": 67,
+    "top_k": 4,
+    "candidate_k": 20,
+    "rrf_k": 60,
+    "chunk_size": 900,
+    "chunk_overlap": 150,
+    "min_relevance_score": 0.25,
+    "python": "3.11.15",
+    "generated_at": "2026-09-22 19:43 UTC"
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "question": "How often should the LC-500 focus lens be cleaned?",
+      "answerable": true,
+      "expected": [
+        "lc500-manual",
+        "sop-006-pm-schedule"
+      ],
+      "top_docs": [
+        "lc500-manual",
+        "sop-006-pm-schedule",
+        "spares-escalation"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "lc500-manual",
+        "sop-006-pm-schedule",
+        "spares-escalation"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.570081999981994,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 0.6666666666666666,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q02",
+      "question": "What does robot alarm R17 mean?",
+      "answerable": true,
+      "expected": [
+        "alarm-reference"
+      ],
+      "top_docs": [
+        "alarm-reference",
+        "alarm-reference",
+        "sop-014-robot-calibration"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "alarm-reference",
+        "alarm-reference"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 4.285006000031899,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 0.0,
+      "ablation_dense_rr": 0.5,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q03",
+      "question": "What does alarm E220 mean on the CM-220?",
+      "answerable": true,
+      "expected": [
+        "cm220-maintenance",
+        "alarm-reference"
+      ],
+      "top_docs": [
+        "alarm-reference",
+        "cm220-maintenance",
+        "cm220-maintenance"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "alarm-reference",
+        "cm220-maintenance",
+        "alarm-reference"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 8.385632999988957,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q04",
+      "question": "What is the acceptable backlash on the CNC mill axes?",
+      "answerable": true,
+      "expected": [
+        "cm220-maintenance"
+      ],
+      "top_docs": [
+        "cm220-maintenance",
+        "cm220-maintenance",
+        "cm220-maintenance"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "cm220-maintenance"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.231629000055364,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q05",
+      "question": "What coolant mixture goes into the CH-40 chiller reservoir?",
+      "answerable": true,
+      "expected": [
+        "ch40-manual"
+      ],
+      "top_docs": [
+        "ch40-manual",
+        "field-notes-export",
+        "ch40-manual"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "ch40-manual",
+        "field-notes-export",
+        "ch40-manual"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.194213000000673,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 0.6666666666666666,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q06",
+      "question": "Who is allowed to remove a lockout lock?",
+      "answerable": true,
+      "expected": [
+        "sop-001-loto"
+      ],
+      "top_docs": [
+        "sop-001-loto",
+        "ch40-manual",
+        "sop-001-loto"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "sop-001-loto",
+        "sop-020-handover"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 13.124202999961199,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 0.5,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q07",
+      "question": "How do I perform a rate-of-rise test on the vacuum chamber?",
+      "answerable": true,
+      "expected": [
+        "ts-003-vacuum-leaks"
+      ],
+      "top_docs": [
+        "ts-003-vacuum-leaks",
+        "ts-003-vacuum-leaks",
+        "vc90-manual"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "ts-003-vacuum-leaks",
+        "ts-003-vacuum-leaks"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 13.320883999995203,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q08",
+      "question": "What base pressure must the VC-90 reach before coating?",
+      "answerable": true,
+      "expected": [
+        "vc90-manual"
+      ],
+      "top_docs": [
+        "ts-003-vacuum-leaks",
+        "vc90-manual",
+        "alarm-reference"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "vc90-manual",
+        "alarm-reference"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.383417999970334,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 0.5,
+      "ablation_hybrid_hit@1": 0.0,
+      "ablation_hybrid_rr": 0.5,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 0.0,
+      "ablation_dense_rr": 0.5,
+      "citation_precision": 0.5,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q09",
+      "question": "Can I jumper the door switch during mirror alignment?",
+      "answerable": true,
+      "expected": [
+        "bulletin-2026-03"
+      ],
+      "top_docs": [
+        "lc500-manual",
+        "field-notes-export",
+        "sop-014-robot-calibration"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "lc500-manual",
+        "sop-014-robot-calibration"
+      ],
+      "flagged_chunks": 1,
+      "latency_ms": 9.286872999950901,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "rr": 0.25,
+      "ablation_hybrid_hit@1": 0.0,
+      "ablation_hybrid_rr": 0.25,
+      "ablation_bm25_hit@1": 0.0,
+      "ablation_bm25_rr": 0.25,
+      "ablation_dense_hit@1": 0.0,
+      "ablation_dense_rr": 0.2,
+      "citation_precision": 0.0,
+      "citation_hit": 0.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q10",
+      "question": "What is the TCP error tolerance for robot arm calibration?",
+      "answerable": true,
+      "expected": [
+        "sop-014-robot-calibration"
+      ],
+      "top_docs": [
+        "alarm-reference",
+        "sop-014-robot-calibration",
+        "sop-014-robot-calibration"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "alarm-reference",
+        "sop-014-robot-calibration"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.18249200003629,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 0.5,
+      "ablation_hybrid_hit@1": 0.0,
+      "ablation_hybrid_rr": 0.5,
+      "ablation_bm25_hit@1": 0.0,
+      "ablation_bm25_rr": 0.5,
+      "ablation_dense_hit@1": 0.0,
+      "ablation_dense_rr": 0.5,
+      "citation_precision": 0.5,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q12",
+      "question": "What is the target response time for a Tier 2 service request?",
+      "answerable": true,
+      "expected": [
+        "spares-escalation"
+      ],
+      "top_docs": [
+        "spares-escalation",
+        "alarm-reference",
+        "spares-escalation"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "spares-escalation",
+        "alarm-reference"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.4107749999921,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 0.5,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q13",
+      "question": "What action does safety bulletin 2026-03 require for the door interlock bracket?",
+      "answerable": true,
+      "expected": [
+        "bulletin-2026-03"
+      ],
+      "top_docs": [
+        "bulletin-2026-03",
+        "bulletin-2026-03",
+        "bulletin-2026-03"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "bulletin-2026-03"
+      ],
+      "flagged_chunks": 1,
+      "latency_ms": 9.469152999940889,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q15",
+      "question": "What must be reviewed during a maintenance shift handover?",
+      "answerable": true,
+      "expected": [
+        "sop-020-handover"
+      ],
+      "top_docs": [
+        "sop-020-handover",
+        "sop-020-handover",
+        "sop-020-handover"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "sop-020-handover",
+        "sop-020-handover",
+        "sop-020-handover"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 17.71141400001852,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q16",
+      "question": "What is the part number for the VC-90 lid O-ring?",
+      "answerable": true,
+      "expected": [
+        "spares-escalation",
+        "vc90-manual"
+      ],
+      "top_docs": [
+        "vc90-manual",
+        "spares-escalation",
+        "ts-003-vacuum-leaks"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "vc90-manual",
+        "spares-escalation"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.355082999945807,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q17",
+      "question": "How do I align the laser mirrors with a target card?",
+      "answerable": true,
+      "expected": [
+        "sop-014-robot-calibration",
+        "lc500-manual"
+      ],
+      "top_docs": [
+        "sop-014-robot-calibration",
+        "lc500-manual",
+        "vc90-manual"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "sop-014-robot-calibration"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.4502790000206,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q18",
+      "question": "What should I do if a spill of IPA is larger than 500 ml?",
+      "answerable": true,
+      "expected": [
+        "sop-009-chemicals"
+      ],
+      "top_docs": [
+        "sop-009-chemicals",
+        "sop-009-chemicals",
+        "sop-009-chemicals"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "sop-009-chemicals"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.266099000001304,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "rr": 1.0,
+      "ablation_hybrid_hit@1": 1.0,
+      "ablation_hybrid_rr": 1.0,
+      "ablation_bm25_hit@1": 1.0,
+      "ablation_bm25_rr": 1.0,
+      "ablation_dense_hit@1": 1.0,
+      "ablation_dense_rr": 1.0,
+      "citation_precision": 1.0,
+      "citation_hit": 1.0,
+      "groundedness": 1.0
+    },
+    {
+      "id": "q19",
+      "question": "What was the company's quarterly revenue last year?",
+      "answerable": false,
+      "expected": [],
+      "top_docs": [
+        "sop-014-robot-calibration",
+        "sop-006-pm-schedule",
+        "sop-020-handover"
+      ],
+      "refused": true,
+      "cited_docs": [],
+      "flagged_chunks": 0,
+      "latency_ms": 9.05590700006087
+    },
+    {
+      "id": "q20",
+      "question": "Can you recommend a good recipe for sourdough bread?",
+      "answerable": false,
+      "expected": [],
+      "top_docs": [
+        "ch40-manual",
+        "sop-001-loto",
+        "sop-006-pm-schedule"
+      ],
+      "refused": true,
+      "cited_docs": [],
+      "flagged_chunks": 0,
+      "latency_ms": 8.953366000014285
+    },
+    {
+      "id": "q21",
+      "question": "What is the maximum payload of the RA-6 robot?",
+      "answerable": false,
+      "expected": [],
+      "top_docs": [
+        "alarm-reference",
+        "sop-014-robot-calibration",
+        "sop-014-robot-calibration"
+      ],
+      "refused": false,
+      "cited_docs": [
+        "alarm-reference"
+      ],
+      "flagged_chunks": 0,
+      "latency_ms": 9.204858000089189
+    },
+    {
+      "id": "q22",
+      "question": "What is the warranty period for the LC-500?",
+      "answerable": false,
+      "expected": [],
+      "top_docs": [
+        "spares-escalation",
+        "lc500-manual",
+        "lc500-manual"
+      ],
+      "refused": true,
+      "cited_docs": [],
+      "flagged_chunks": 0,
+      "latency_ms": 9.00114199998825
+    }
+  ]
+}
